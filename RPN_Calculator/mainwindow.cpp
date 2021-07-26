@@ -89,3 +89,17 @@ void MainWindow::on_Enter_Button_clicked()
 
 }
 
+
+void MainWindow::on_Clear_Button_clicked()
+{
+    ui->lineEdit->clear();
+}
+
+void MainWindow::on_Del_Button_clicked()
+{
+    ui->textEdit->clear();
+    Numbers.clear();
+    count = 0;
+
+}
+

@@ -39,6 +39,10 @@ private slots:
 
     void on_Enter_Button_clicked();
 
+    void on_Clear_Button_clicked();
+
+    void on_Del_Button_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStack<double> Numbers;
