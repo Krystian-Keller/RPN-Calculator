@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QStack>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -36,7 +37,12 @@ private slots:
 
     void on_Number_0_clicked();
 
+    void on_Enter_Button_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QStack<double> Numbers;
+    int count;
+
 };
 #endif // MAINWINDOW_H

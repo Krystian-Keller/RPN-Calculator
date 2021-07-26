@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    count = 0;
 }
 
 MainWindow::~MainWindow()
@@ -71,5 +72,20 @@ void MainWindow::on_Number_9_clicked()
 void MainWindow::on_Number_0_clicked()
 {
     ui->lineEdit->insert("0");
+}
+
+
+void MainWindow::on_Enter_Button_clicked()
+{
+    Numbers.push(ui->lineEdit->text().toDouble());
+    ui->textEdit->clear();
+    int i;
+    for (i=0; i<=count; i++){
+        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
+        ui->textEdit->insertPlainText("\n");
+    }
+    ui->lineEdit->clear();
+    count++;
+
 }
 
