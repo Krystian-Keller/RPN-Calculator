@@ -43,6 +43,10 @@ private slots:
 
     void on_Del_Button_clicked();
 
+    void on_Op_Addiction_clicked();
+
+    void on_Op_Multiplication_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStack<double> Numbers;

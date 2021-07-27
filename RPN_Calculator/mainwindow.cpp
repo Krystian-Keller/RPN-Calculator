@@ -100,6 +100,32 @@ void MainWindow::on_Del_Button_clicked()
     ui->textEdit->clear();
     Numbers.clear();
     count = 0;
+}
 
+
+void MainWindow::on_Op_Addiction_clicked()
+{
+    Numbers.push(Numbers.pop() + Numbers.pop());
+    ui->textEdit->clear();
+    count--;
+    int i;
+    for(i=0; i<count; i++){
+        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
+        ui->textEdit->insertPlainText("\n");
+    }
+
+}
+
+
+void MainWindow::on_Op_Multiplication_clicked()
+{
+    Numbers.push(Numbers.pop() * Numbers.pop());
+    ui->textEdit->clear();
+    count--;
+    int i;
+    for(i=0; i<count; i++){
+        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
+        ui->textEdit->insertPlainText("\n");
+    }
 }
 
