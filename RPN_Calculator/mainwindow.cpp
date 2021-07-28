@@ -83,11 +83,6 @@ void MainWindow::on_Enter_Button_clicked()
     Numbers.push(ui->lineEdit->text().toDouble());
     ui->textEdit->clear();
     count++;
-    /*int i;
-    for (i=0; i<count; i++){
-        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
-        ui->textEdit->insertPlainText("\n");
-    }*/
 
     Print();
     ui->lineEdit->clear();
