@@ -169,4 +169,21 @@ void MainWindow::on_Op_Division_clicked()
     }
 
 }
+void MainWindow::on_Rol_Button_clicked()
+{
+    int aux_1, aux_2;
+
+    aux_1 = Numbers.pop();
+    aux_2 = Numbers.pop();
+
+    Numbers.push(aux_1);
+    Numbers.push(aux_2);
+
+    ui->textEdit->clear();
+    int i;
+    for(i=0; i<count; i++){
+        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
+        ui->textEdit->insertPlainText("\n");
+    }
+}
 

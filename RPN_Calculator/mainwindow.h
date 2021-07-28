@@ -51,6 +51,8 @@ private slots:
 
     void on_Op_Division_clicked();
 
+    void on_Rol_Button_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStack<double> Numbers;
