@@ -7,6 +7,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     count = 0;
+
+    ui->textEdit->setReadOnly(true);
+    ui->lineEdit->setReadOnly(true);
 }
 
 MainWindow::~MainWindow()
