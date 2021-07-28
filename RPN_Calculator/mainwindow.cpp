@@ -190,3 +190,15 @@ void MainWindow::on_Rol_Button_clicked()
     }
 }
 
+
+void MainWindow::on_Arrow_Up_clicked()
+{
+    ui->textEdit->moveCursor(QTextCursor::Up);
+}
+
+
+void MainWindow::on_Arrow_Down_clicked()
+{
+    ui->textEdit->moveCursor(QTextCursor::Down);
+}
+
