@@ -62,6 +62,7 @@ private:
     QStack<double> Numbers;
     int count;
     void Print();
+    int aux;
 
 };
 #endif // MAINWINDOW_H
