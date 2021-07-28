@@ -129,3 +129,44 @@ void MainWindow::on_Op_Multiplication_clicked()
     }
 }
 
+
+void MainWindow::on_Op_Subtraction_clicked()
+{
+    ui->textEdit->clear();
+
+    int aux_1, aux_2;
+    aux_1 = Numbers.pop();
+    aux_2 = Numbers.pop();
+
+    Numbers.push(aux_2 - aux_1);
+
+    count--;
+
+    int i;
+    for(i=0; i<count; i++){
+        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
+        ui->textEdit->insertPlainText("\n");
+    }
+}
+
+
+void MainWindow::on_Op_Division_clicked()
+{
+    ui->textEdit->clear();
+
+    int aux_1, aux_2;
+    aux_1 = Numbers.pop();
+    aux_2 = Numbers.pop();
+
+    Numbers.push(aux_2 / aux_1);
+
+    count--;
+
+    int i;
+    for(i=0; i<count; i++){
+        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
+        ui->textEdit->insertPlainText("\n");
+    }
+
+}
+

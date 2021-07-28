@@ -47,6 +47,10 @@ private slots:
 
     void on_Op_Multiplication_clicked();
 
+    void on_Op_Subtraction_clicked();
+
+    void on_Op_Division_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStack<double> Numbers;
