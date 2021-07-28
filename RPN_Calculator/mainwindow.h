@@ -55,10 +55,13 @@ private slots:
 
     void on_Arrow_Up_clicked();
 
+    void on_Arrow_Down_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStack<double> Numbers;
     int count;
+    void Print();
 
 };
 #endif // MAINWINDOW_H

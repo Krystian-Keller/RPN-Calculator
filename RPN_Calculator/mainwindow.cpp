@@ -82,13 +82,15 @@ void MainWindow::on_Enter_Button_clicked()
 {
     Numbers.push(ui->lineEdit->text().toDouble());
     ui->textEdit->clear();
-    int i;
-    for (i=0; i<=count; i++){
+    count++;
+    /*int i;
+    for (i=0; i<count; i++){
         ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
         ui->textEdit->insertPlainText("\n");
-    }
+    }*/
+
+    Print();
     ui->lineEdit->clear();
-    count++;
 
 }
 
@@ -111,11 +113,8 @@ void MainWindow::on_Op_Addiction_clicked()
     Numbers.push(Numbers.pop() + Numbers.pop());
     ui->textEdit->clear();
     count--;
-    int i;
-    for(i=0; i<count; i++){
-        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
-        ui->textEdit->insertPlainText("\n");
-    }
+
+    Print();
 
 }
 
@@ -125,11 +124,8 @@ void MainWindow::on_Op_Multiplication_clicked()
     Numbers.push(Numbers.pop() * Numbers.pop());
     ui->textEdit->clear();
     count--;
-    int i;
-    for(i=0; i<count; i++){
-        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
-        ui->textEdit->insertPlainText("\n");
-    }
+
+    Print();
 }
 
 
@@ -145,11 +141,7 @@ void MainWindow::on_Op_Subtraction_clicked()
 
     count--;
 
-    int i;
-    for(i=0; i<count; i++){
-        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
-        ui->textEdit->insertPlainText("\n");
-    }
+    Print();
 }
 
 
@@ -165,12 +157,7 @@ void MainWindow::on_Op_Division_clicked()
 
     count--;
 
-    int i;
-    for(i=0; i<count; i++){
-        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
-        ui->textEdit->insertPlainText("\n");
-    }
-
+    Print();
 }
 void MainWindow::on_Rol_Button_clicked()
 {
@@ -183,17 +170,15 @@ void MainWindow::on_Rol_Button_clicked()
     Numbers.push(aux_2);
 
     ui->textEdit->clear();
-    int i;
-    for(i=0; i<count; i++){
-        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
-        ui->textEdit->insertPlainText("\n");
-    }
+
+    Print();
 }
 
 
 void MainWindow::on_Arrow_Up_clicked()
 {
     ui->textEdit->moveCursor(QTextCursor::Up);
+
 }
 
 
@@ -202,3 +187,18 @@ void MainWindow::on_Arrow_Down_clicked()
     ui->textEdit->moveCursor(QTextCursor::Down);
 }
 
+void MainWindow::Print(){
+    int i, j=count;
+
+    for(i=0; i<j; i++){
+        if((j-i)==1){
+            ui->textEdit->insertPlainText("--->        ");
+            ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
+            ui->textEdit->insertPlainText("\n");
+
+        }else{
+        ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
+        ui->textEdit->insertPlainText("\n");
+        }
+    }
+}
