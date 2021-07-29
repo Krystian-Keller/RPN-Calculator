@@ -187,6 +187,11 @@ void MainWindow::on_Op_Division_clicked()
 }
 void MainWindow::on_Rol_Button_clicked()
 {
+    if(Numbers.size()<2){
+        ui->textEdit->clear();
+        ui->textEdit->insertPlainText("Invalid Operation!");
+        ui->textEdit->insertPlainText("\nPress Del to continue.");
+    }else{
     int aux_1, aux_2;
 
     aux_1 = Numbers.pop();
@@ -196,6 +201,7 @@ void MainWindow::on_Rol_Button_clicked()
     Numbers.push(aux_2);
 
     Print();
+    }
 }
 
 
