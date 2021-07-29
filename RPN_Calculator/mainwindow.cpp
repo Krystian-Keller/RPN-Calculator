@@ -207,26 +207,32 @@ void MainWindow::on_Rol_Button_clicked()
 
 void MainWindow::on_Arrow_Up_clicked()
 {
-    aux++;
-    Print();
 
-    int i;
-    for(i=0; i<=aux; i++){
-        ui->textEdit->moveCursor(QTextCursor::Up);
+
+    if(aux<(Numbers.size()-1)){
+        aux++;
+        Print();
+
+        int i;
+        for(i=0; i<=aux; i++){
+            ui->textEdit->moveCursor(QTextCursor::Up);
+        }
     }
-
 }
 
 
 void MainWindow::on_Arrow_Down_clicked()
 {
-    aux--;
-    Print();
+    if(aux>0){
+        aux--;
+        Print();
 
-    int i;
-    for(i=0; i<=(aux); i++){
-        ui->textEdit->moveCursor(QTextCursor::Up);
+        int i;
+        for(i=0; i<=(aux); i++){
+            ui->textEdit->moveCursor(QTextCursor::Up);
+        }
     }
+
 }
 
 void MainWindow::Print()
