@@ -107,53 +107,83 @@ void MainWindow::on_Del_Button_clicked()
 
 void MainWindow::on_Op_Addiction_clicked()
 {
+    if(Numbers.size()<2){
+        ui->textEdit->clear();
+        ui->textEdit->insertPlainText("Invalid Operation!");
+        ui->textEdit->insertPlainText("\nPress Del to continue.");
+    }else{
     Numbers.push(Numbers.pop() + Numbers.pop());
 
     count--;
 
     Print();
+    }
 
 }
 
 
 void MainWindow::on_Op_Multiplication_clicked()
 {
+    if(Numbers.size()<2){
+        ui->textEdit->clear();
+        ui->textEdit->insertPlainText("Invalid Operation!");
+        ui->textEdit->insertPlainText("\nPress Del to continue.");
+    }else{
     Numbers.push(Numbers.pop() * Numbers.pop());
 
     count--;
 
     Print();
+    }
+
 }
 
 
 void MainWindow::on_Op_Subtraction_clicked()
 {
+    if(Numbers.size()<2){
+        ui->textEdit->clear();
+        ui->textEdit->insertPlainText("Invalid Operation!");
+        ui->textEdit->insertPlainText("\nPress Del to continue.");
+    }else{
+        int aux_1, aux_2;
+        aux_1 = Numbers.pop();
+        aux_2 = Numbers.pop();
 
+        Numbers.push(aux_2 - aux_1);
 
-    int aux_1, aux_2;
-    aux_1 = Numbers.pop();
-    aux_2 = Numbers.pop();
+        count--;
 
-    Numbers.push(aux_2 - aux_1);
-
-    count--;
-
-    Print();
+        Print();
+    }
 }
 
 
 void MainWindow::on_Op_Division_clicked()
 {
+    if(Numbers.size()<2){
+        ui->textEdit->clear();
+        ui->textEdit->insertPlainText("Invalid Operation!");
+        ui->textEdit->insertPlainText("\nPress Del to continue.");
+    }else{
+        int aux_1, aux_2;
+        aux_1 = Numbers.pop();
+        aux_2 = Numbers.pop();
 
-    int aux_1, aux_2;
-    aux_1 = Numbers.pop();
-    aux_2 = Numbers.pop();
+        if(aux_1 == 0){
+            ui->textEdit->clear();
+            ui->textEdit->insertPlainText("Math Error!  Invalid Division by Zero!");
+            ui->textEdit->insertPlainText("\nPress Del to continue.");
+        }else{
+            Numbers.push(aux_2 / aux_1);
 
-    Numbers.push(aux_2 / aux_1);
+            count--;
 
-    count--;
+            Print();
+        }
 
-    Print();
+    }
+
 }
 void MainWindow::on_Rol_Button_clicked()
 {
