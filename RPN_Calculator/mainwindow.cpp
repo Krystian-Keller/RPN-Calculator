@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->textEdit->setReadOnly(true);
     ui->lineEdit->setReadOnly(true);
+
 }
 
 MainWindow::~MainWindow()
@@ -238,6 +239,7 @@ void MainWindow::on_Arrow_Down_clicked()
 void MainWindow::Print()
 {
     ui->textEdit->clear();
+    ui->textEdit->setAlignment(Qt::AlignRight);
 
     int i, j=count;
 
