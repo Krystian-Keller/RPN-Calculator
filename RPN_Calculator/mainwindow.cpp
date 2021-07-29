@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     count = 0;
     aux = 0;
 
-    //ui->textEdit->setReadOnly(true);
+    ui->textEdit->setReadOnly(true);
     ui->lineEdit->setReadOnly(true);
 }
 
@@ -101,6 +101,7 @@ void MainWindow::on_Del_Button_clicked()
     ui->textEdit->clear();
     Numbers.clear();
     count = 0;
+    aux = 0;
 }
 
 
@@ -185,7 +186,11 @@ void MainWindow::on_Arrow_Down_clicked()
 {
     aux--;
     Print();
-    ui->textEdit->moveCursor(QTextCursor::Down);
+
+    int i;
+    for(i=0; i<=(aux); i++){
+        ui->textEdit->moveCursor(QTextCursor::Up);
+    }
 }
 
 void MainWindow::Print()
@@ -205,4 +210,5 @@ void MainWindow::Print()
         ui->textEdit->insertPlainText("\n");
         }
     }
+    ui->textEdit->moveCursor(QTextCursor::Down);
 }
