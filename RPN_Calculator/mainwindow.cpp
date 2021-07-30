@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->textEdit->setReadOnly(true);
     ui->lineEdit->setReadOnly(true);
+    symbol = "<img src=\"C:/WorkSpace_git/Calculadora_RPN/Images/IndicativeArrow.png\" width=\"11\" height=\"11\" >";
 
 }
 
@@ -85,6 +86,7 @@ void MainWindow::on_Enter_Button_clicked()
     Numbers.push(ui->lineEdit->text().toDouble());
 
     count++;
+
 
     Print();
     ui->lineEdit->clear();
@@ -245,7 +247,9 @@ void MainWindow::Print()
 
     for(i=0; i<j; i++){
         if(((j-aux)-i)==1){
-            ui->textEdit->insertPlainText("--->        ");
+            ui->textEdit->insertPlainText("   ");
+            ui->textEdit->insertHtml(symbol);
+            ui->textEdit->insertPlainText("   ");
             ui->textEdit->insertPlainText(QString("%1").arg(Numbers.at(i)));
             ui->textEdit->insertPlainText("\n");
 

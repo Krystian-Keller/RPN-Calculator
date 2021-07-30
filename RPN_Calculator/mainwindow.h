@@ -63,6 +63,7 @@ private:
     int count;
     void Print();
     int aux;
+    QString symbol;
 
 };
 #endif // MAINWINDOW_H
