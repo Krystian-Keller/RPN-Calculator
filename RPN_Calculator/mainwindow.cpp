@@ -112,11 +112,8 @@ void MainWindow::on_Del_Button_clicked()
 
 void MainWindow::on_Op_Addiction_clicked()
 {
-    if(Numbers.size()<2){
-        ui->textEdit->clear();
-        ui->textEdit->insertPlainText("Invalid Operation!");
-        ui->textEdit->insertPlainText("\nPress Del to continue.");
-    }else{
+    if(Verification()){
+
     Numbers.push(Numbers.pop() + Numbers.pop());
 
     count--;
@@ -129,11 +126,8 @@ void MainWindow::on_Op_Addiction_clicked()
 
 void MainWindow::on_Op_Multiplication_clicked()
 {
-    if(Numbers.size()<2){
-        ui->textEdit->clear();
-        ui->textEdit->insertPlainText("Invalid Operation!");
-        ui->textEdit->insertPlainText("\nPress Del to continue.");
-    }else{
+    if(Verification()){
+
     Numbers.push(Numbers.pop() * Numbers.pop());
 
     count--;
@@ -146,11 +140,8 @@ void MainWindow::on_Op_Multiplication_clicked()
 
 void MainWindow::on_Op_Subtraction_clicked()
 {
-    if(Numbers.size()<2){
-        ui->textEdit->clear();
-        ui->textEdit->insertPlainText("Invalid Operation!");
-        ui->textEdit->insertPlainText("\nPress Del to continue.");
-    }else{
+    if(Verification()){
+
         int aux_1, aux_2;
         aux_1 = Numbers.pop();
         aux_2 = Numbers.pop();
@@ -166,11 +157,8 @@ void MainWindow::on_Op_Subtraction_clicked()
 
 void MainWindow::on_Op_Division_clicked()
 {
-    if(Numbers.size()<2){
-        ui->textEdit->clear();
-        ui->textEdit->insertPlainText("Invalid Operation!");
-        ui->textEdit->insertPlainText("\nPress Del to continue.");
-    }else{
+    if(Verification()){
+
         int aux_1, aux_2;
         aux_1 = Numbers.pop();
         aux_2 = Numbers.pop();
@@ -192,11 +180,8 @@ void MainWindow::on_Op_Division_clicked()
 }
 void MainWindow::on_Rol_Button_clicked()
 {
-    if(Numbers.size()<2){
-        ui->textEdit->clear();
-        ui->textEdit->insertPlainText("Invalid Operation!");
-        ui->textEdit->insertPlainText("\nPress Del to continue.");
-    }else{
+    if(Verification()){
+
     int aux_1, aux_2;
 
     aux_1 = Numbers.pop();
@@ -263,3 +248,15 @@ void MainWindow::Print()
     ui->textEdit->moveCursor(QTextCursor::Down);
 }
 
+int MainWindow::Verification()
+{
+    if(Numbers.size()<2){
+        ui->textEdit->clear();
+        ui->textEdit->insertPlainText("Invalid Operation!");
+        ui->textEdit->insertPlainText("\nPress Del to continue.");
+        return 0;
+    }else{
+        return 1;
+    }
+
+}
