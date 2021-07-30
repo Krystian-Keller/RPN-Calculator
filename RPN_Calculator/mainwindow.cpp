@@ -88,6 +88,7 @@ void MainWindow::on_Enter_Button_clicked()
     Numbers.push(ui->lineEdit->text().toDouble());
 
     count++;
+    aux = 0;
 
     Print();
     ui->lineEdit->clear();
