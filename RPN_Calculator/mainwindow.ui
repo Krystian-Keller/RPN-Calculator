@@ -497,7 +497,13 @@ QPushButton:pressed{
 </string>
     </property>
     <property name="text">
-     <string>Down</string>
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="Arrow_Up">
@@ -526,12 +532,16 @@ QPushButton:pressed{
 	background-color: #A9A9A9;
 	border: 1px solid gray;
 	padding: 5px;
-}
-
-</string>
+}</string>
     </property>
     <property name="text">
-     <string>Up</string>
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="Clear_Button">
