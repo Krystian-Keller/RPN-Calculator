@@ -11,10 +11,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->textEdit->setReadOnly(true);
     ui->lineEdit->setReadOnly(true);
-    symbol = "<img src=\"C:/WorkSpace_git/Calculadora_RPN/Images/IndicativeArrow.png\" width=\"11\" height=\"11\" >";
-
-    ui->Arrow_Up->setIcon(QIcon("C:/WorkSpace_git/Calculadora_RPN/Images/UpArrow.png"));
-    ui->Arrow_Down->setIcon(QIcon("C:/WorkSpace_git/Calculadora_RPN/Images/DownArrow.png"));
+    symbol = "<img src=\"C:/RPN_Calculator/Images/IndicativeArrow.png\" width=\"11\" height=\"11\" >";
+    ui->Arrow_Up->setIcon(QIcon("C:/RPN_Calculator/Images/UpArrow.png"));
+    ui->Arrow_Down->setIcon(QIcon("C:/RPN_Calculator/Images/DownArrow.png"));
 }
 
 MainWindow::~MainWindow()
