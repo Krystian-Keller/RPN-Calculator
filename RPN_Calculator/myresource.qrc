@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/resource">
+        <file alias="DownArrow-img.png">Images/DownArrow.png</file>
+        <file alias="IndicativeArrow-img.png">Images/IndicativeArrow.png</file>
+        <file alias="UpArrow-img.png">Images/UpArrow.png</file>
+    </qresource>
+</RCC>
