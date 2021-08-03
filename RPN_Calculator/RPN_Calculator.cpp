@@ -1,9 +1,9 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "RPN_Calculator.h"
+#include "ui_RPN_Calculator.h"
 
-MainWindow::MainWindow(QWidget *parent)
+RPN_Calculator::RPN_Calculator(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::RPN_Calculator)
 {
     ui->setupUi(this);
     count = 0;
@@ -16,73 +16,73 @@ MainWindow::MainWindow(QWidget *parent)
     ui->Arrow_Down->setIcon(QIcon(":/resource/DownArrow-img.png"));
 }
 
-MainWindow::~MainWindow()
+RPN_Calculator::~RPN_Calculator()
 {
     delete ui;
 }
 
 
-void MainWindow::on_Number_1_clicked()
+void RPN_Calculator::on_Number_1_clicked()
 {
     ui->lineEdit->insert("1");
 }
 
 
-void MainWindow::on_Number_2_clicked()
+void RPN_Calculator::on_Number_2_clicked()
 {
     ui->lineEdit->insert("2");
 }
 
 
-void MainWindow::on_Number_3_clicked()
+void RPN_Calculator::on_Number_3_clicked()
 {
     ui->lineEdit->insert("3");
 }
 
 
-void MainWindow::on_Number_4_clicked()
+void RPN_Calculator::on_Number_4_clicked()
 {
     ui->lineEdit->insert("4");
 }
 
 
-void MainWindow::on_Number_5_clicked()
+void RPN_Calculator::on_Number_5_clicked()
 {
     ui->lineEdit->insert("5");
 }
 
 
-void MainWindow::on_Number_6_clicked()
+void RPN_Calculator::on_Number_6_clicked()
 {
     ui->lineEdit->insert("6");
 }
 
 
-void MainWindow::on_Number_7_clicked()
+void RPN_Calculator::on_Number_7_clicked()
 {
     ui->lineEdit->insert("7");
 }
 
 
-void MainWindow::on_Number_8_clicked()
+void RPN_Calculator::on_Number_8_clicked()
 {
     ui->lineEdit->insert("8");
 }
 
 
-void MainWindow::on_Number_9_clicked()
+void RPN_Calculator::on_Number_9_clicked()
 {
     ui->lineEdit->insert("9");
 }
 
 
-void MainWindow::on_Number_0_clicked()
+void RPN_Calculator::on_Number_0_clicked()
 {
     ui->lineEdit->insert("0");
 }
 
 
-void MainWindow::on_Enter_Button_clicked()
+void RPN_Calculator::on_Enter_Button_clicked()
 {
     Numbers.push(ui->lineEdit->text().toDouble());
 
@@ -95,12 +95,12 @@ void MainWindow::on_Enter_Button_clicked()
 }
 
 
-void MainWindow::on_Clear_Button_clicked()
+void RPN_Calculator::on_Clear_Button_clicked()
 {
     ui->lineEdit->clear();
 }
 
-void MainWindow::on_Del_Button_clicked()
+void RPN_Calculator::on_Del_Button_clicked()
 {
     ui->textEdit->clear();
     Numbers.clear();
@@ -109,7 +109,7 @@ void MainWindow::on_Del_Button_clicked()
 }
 
 
-void MainWindow::on_Op_Addiction_clicked()
+void RPN_Calculator::on_Op_Addiction_clicked()
 {
     if(Verification()){
 
@@ -123,7 +123,7 @@ void MainWindow::on_Op_Addiction_clicked()
 }
 
 
-void MainWindow::on_Op_Multiplication_clicked()
+void RPN_Calculator::on_Op_Multiplication_clicked()
 {
     if(Verification()){
 
@@ -137,7 +137,7 @@ void MainWindow::on_Op_Multiplication_clicked()
 }
 
 
-void MainWindow::on_Op_Subtraction_clicked()
+void RPN_Calculator::on_Op_Subtraction_clicked()
 {
     if(Verification()){
 
@@ -154,7 +154,7 @@ void MainWindow::on_Op_Subtraction_clicked()
 }
 
 
-void MainWindow::on_Op_Division_clicked()
+void RPN_Calculator::on_Op_Division_clicked()
 {
     if(Verification()){
 
@@ -177,7 +177,7 @@ void MainWindow::on_Op_Division_clicked()
     }
 
 }
-void MainWindow::on_Rol_Button_clicked()
+void RPN_Calculator::on_Rol_Button_clicked()
 {
     if(Verification()){
 
@@ -194,7 +194,7 @@ void MainWindow::on_Rol_Button_clicked()
 }
 
 
-void MainWindow::on_Arrow_Up_clicked()
+void RPN_Calculator::on_Arrow_Up_clicked()
 {
 
 
@@ -210,7 +210,7 @@ void MainWindow::on_Arrow_Up_clicked()
 }
 
 
-void MainWindow::on_Arrow_Down_clicked()
+void RPN_Calculator::on_Arrow_Down_clicked()
 {
     if(aux>0){
         aux--;
@@ -224,7 +224,7 @@ void MainWindow::on_Arrow_Down_clicked()
 
 }
 
-void MainWindow::Print()
+void RPN_Calculator::Print()
 {
     ui->textEdit->clear();
     ui->textEdit->setAlignment(Qt::AlignRight);
@@ -247,7 +247,7 @@ void MainWindow::Print()
     ui->textEdit->moveCursor(QTextCursor::Down);
 }
 
-int MainWindow::Verification()
+int RPN_Calculator::Verification()
 {
     if(Numbers.size()<2){
         ui->textEdit->clear();

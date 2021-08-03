@@ -1,20 +1,20 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef RPN_CALCULATOR_H
+#define RPN_CALCULATOR_H
 
 #include <QMainWindow>
 #include <QStack>
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui { class RPN_Calculator; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class RPN_Calculator : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    RPN_Calculator(QWidget *parent = nullptr);
+    ~RPN_Calculator();
 
 private slots:
     void on_Number_1_clicked();
@@ -58,7 +58,7 @@ private slots:
     void on_Arrow_Down_clicked();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::RPN_Calculator *ui;
     QStack<double> Numbers;
     int count;
     void Print();
@@ -67,4 +67,7 @@ private:
     QString symbol;
 
 };
-#endif // MAINWINDOW_H
+
+
+
+#endif // RPN_CALCULATOR_H
