@@ -1,6 +1,6 @@
 # RPN-Calculator:
 
-<img src="pictures-ReadMe/Practical_example_1.gif" alt="Pratical_Example"  /> 
+<img src="pictures-ReadMe/Practical_example_1.gif" alt="Pratical_Example_1"  /> <img src="pictures-ReadMe/Practical_example_2.gif" alt="Pratical_Example_2"  /> 
 
 
 
