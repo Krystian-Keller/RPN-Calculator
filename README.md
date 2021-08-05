@@ -64,7 +64,7 @@ You can download and try this Calculator by [clicking here](https://github.com/K
 
 * ##### Enter Function:
 
-  * Once that you had already put the numbers into the input label, you must clicked the **Enter** button to allocate in the Calculator's memory.
+  * Once that you had already put the numbers into the input label, you must clicked the **Enter** button to allocate in the Calculator's memory and the operand will appear in the output label.
 
     <img src="pictures-ReadMe/Enter.PNG" alt="Enter"  /> <img src="pictures-ReadMe/Enter_example.PNG" alt="Enter_example"  /> 
 
@@ -84,7 +84,6 @@ You can download and try this Calculator by [clicking here](https://github.com/K
 
     ![Math_example](pictures-ReadMe/Math_example.PNG) 
   
-
 * ##### Clear and Del Functions:
 
   * The Clear Button function is to only **clear** the input label;
@@ -95,13 +94,14 @@ You can download and try this Calculator by [clicking here](https://github.com/K
 * ##### Rol Function:
 
   * The Rol button is meant to change the operands place with wich others, only can use the last two operands;
-  
+
+    ![Rol_Example_1](pictures-ReadMe/Rol_Example_1.PNG) ![Rol_Example_2](pictures-ReadMe/Rol_Example_2.PNG)
 
 * ##### Arrow Function:
 
   * In the case that you have a lot of operands in the memory, the output label may can't show all of them. So, for this reason, the arrows would help you to swipe up and down through the display.
 
-    
+    ![Arrow_Example_1](pictures-ReadMe/Arrow_Example_1.PNG) ![Arrow_example_2](pictures-ReadMe/Arrow_example_2.PNG) 
 
      
 
