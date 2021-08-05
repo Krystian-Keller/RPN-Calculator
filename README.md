@@ -50,12 +50,12 @@ You can download and try this Calculator by [clicking here](https://github.com/K
 
 - ##### Numbers Buttons:
 
-  - We can only make inputs by using this following buttons highlighted.
+  - We can only make inputs by using this following buttons highlighted. 
 
-    ![Numbers](Numbers.PNG) 
+    ![Numbers](pictures-ReadMe/Numbers.PNG) 
 
    
 
   * The Numbers that you clicked should appear at here: 
-
-![Input](Line_Edit.PNG)  
+  
+    ![Line_Edit](pictures-ReadMe/Line_Edit.PNG) 
