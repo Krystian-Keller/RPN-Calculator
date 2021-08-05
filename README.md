@@ -22,9 +22,9 @@ Another  useful example:
 
 ## Why?
 
-The reason why I decided to do this is because I want to create a portfolio and I thought that it might been a good idea to start with this one. It would  help me to learn the basic concepts of Git and GitHub. Also, I would like to show my current ability with programming and improvements that will happen.
+The reason why I decided to do this is because I want to create a portfolio and I thought that it might be a good idea to start with this one. It would  help me to learn the basic concepts of Git and GitHub. Also, I would like to show my current ability with programming and improvements that will happen.
 
-Nevertheless, I would like to you to keep in contact to tell me what did you think about this project and with you have any suggestions.
+Nevertheless, I would like to you to keep in contact to tell me what did you think about this project and if you have any suggestions.
 
 LinkedIn: https://www.linkedin.com/in/krystian-keller-a88b001a4/
 
@@ -62,7 +62,7 @@ You can download and try this Calculator by [clicking here](https://github.com/K
 
 
 
-* ##### **Enter Function: **
+* ##### Enter Function:
 
   * Once that you had already put the numbers into the input label, you must clicked the **Enter** button to allocate in the Calculator's memory.
 
@@ -83,6 +83,23 @@ You can download and try this Calculator by [clicking here](https://github.com/K
   * For this example, I clicked in the **Addition** Button: 
 
     ![Math_example](pictures-ReadMe/Math_example.PNG) 
+  
+
+* ##### Clear and Del Functions:
+
+  * The Clear Button function is to only **clear** the input label;
+  
+  * Del function is to **clear all the memory** of the calculator and allow you to reuse the Program without restarting it;
+
+
+* ##### Rol Function:
+
+  * The Rol button is meant to change the operands place with wich others, only can use the last two operands;
+  
+
+* ##### Arrow Function:
+
+  * In the case that you have a lot of operands in the memory, the output label may can't show all of them. So, for this reason, the arrows would help you to swipe up and down through the display.
 
     
 
