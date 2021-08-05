@@ -1,7 +1,5 @@
 # RPN-Calculator:
 
-<img src="pictures-ReadMe/Practical_example_1.gif" alt="Practical_example"  /> <img src="pictures-ReadMe/Practical_example_2.gif" alt="Practical_example_2"  />  
-
 ### About this project: 
 
 This is  a first  try of my to create a  open source program, and I got inspiration from a task that I had done at college.
