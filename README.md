@@ -101,7 +101,7 @@ You can download and try this Calculator by [clicking here](https://github.com/K
 
   * In the case that you have a lot of operands in the memory, the output label may can't show all of them. So, for this reason, the arrows would help you to swipe up and down through the display.
 
-    ![Arrow_Example_1](pictures-ReadMe/Arrow_Example_1.PNG) ![Arrow_example_2](pictures-ReadMe/Arrow_example_2.PNG) 
+    ![Arrow_Example_1](pictures-ReadMe/Arrow_example_1.PNG) ![Arrow_example_2](pictures-ReadMe/Arrow_example_2.PNG) 
 
      
 
