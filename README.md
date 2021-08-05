@@ -59,3 +59,33 @@ You can download and try this Calculator by [clicking here](https://github.com/K
   * The Numbers that you clicked should appear at here: 
   
     ![Line_Edit](pictures-ReadMe/Line_Edit.PNG) 
+
+
+
+* ##### **Enter Function: **
+
+  * Once that you had already put the numbers into the input label, you must clicked the **Enter** button to allocate in the Calculator's memory.
+
+    <img src="pictures-ReadMe/Enter.PNG" alt="Enter"  /> <img src="pictures-ReadMe/Enter_example.PNG" alt="Enter_example"  /> 
+
+  * According to the order that you put the operands, will appear an **Indicative Arrow** in the output label.
+
+    <img src="pictures-ReadMe/Enter_example_2.PNG" alt="Enter_example_2"  /> 
+
+
+
+* ##### Math Operations: 
+
+  * The four basic math operations is disposed above:
+
+    ![Math_Operations](pictures-ReadMe/Math_Operations.PNG) 
+
+  * For this example, I clicked in the **Addition** Button: 
+
+    ![Math_example](pictures-ReadMe/Math_example.PNG) 
+
+    
+
+     
+
+    
