@@ -6,9 +6,9 @@
 
 ### About this project: 
 
-This is  a first  try of my to create a  open source program, and I got inspiration from a task that I had done at college.
+This is  a first  try of mine to create an  open source program, and I got inspiration from a task that I had done at college.
 
-This is a basic  calculator based on **Reverse Polish Notation** (RPN) mode or simply  **postfix notation**, and it means that  which operators follow their operands. 
+This is a basic calculator based on **Reverse Polish Notation** (RPN) mode or simply  **postfix notation**, and it means that  which operators follow their operands. 
 
 In this mathematical notation, for example, to add  6 and 7 ,  would write  6 7 +,  instead of 6 + 7. In the situation that you have more than one operation you could do the following: 
 
@@ -28,7 +28,7 @@ Another  useful example:
 
 The reason why I decided to do this is because I want to create a portfolio and I thought that it might be a good idea to start with this one. It would  help me to learn the basic concepts of Git and GitHub. Also, I would like to show my current ability with programming and improvements that will happen.
 
-Nevertheless, I would like to you to keep in contact to tell me what did you think about this project and if you have any suggestions.
+Nevertheless, I would like to you to keep in contact to tell me what you think about this project and if you have any suggestions.
 
 LinkedIn: https://www.linkedin.com/in/krystian-keller-a88b001a4/
 
@@ -68,7 +68,7 @@ You can download and try this Calculator by [clicking here](https://github.com/K
 
 * ##### Enter Function:
 
-  * Once that you had already put the numbers into the input label, you must clicked the **Enter** button to allocate in the Calculator's memory and the operand will appear in the output label.
+  * Once that you had already put the numbers into the input label, you have to clicked the **Enter** button to allocate in the Calculator's memory and the operand will appear in the output label.
 
     <img src="pictures-ReadMe/Enter.PNG" alt="Enter"  /> <img src="pictures-ReadMe/Enter_example.PNG" alt="Enter_example"  /> 
 
